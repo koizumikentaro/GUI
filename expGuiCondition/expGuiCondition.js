@@ -203,11 +203,11 @@ var expGuiCondition = function (pObject, config) {
         //var tmpValue  = new Array("normal","tokuwari");
         //tmp_conditionObject[conditionId.toLowerCase()] = addCondition(conditionLabel,tmpOption,tmpValue);
         // 航空保険特別料金
-        var conditionId = "includeInsurance";
-        var conditionLabel = "航空保険特別料金";
-        var tmpOption = new Array("運賃に含む", "運賃に含まない");
-        var tmpValue = new Array("true", "false");
-        tmp_conditionObject[conditionId.toLowerCase()] = addCondition(conditionLabel, tmpOption, tmpValue);
+        // var conditionId = "includeInsurance";
+        // var conditionLabel = "航空保険特別料金";
+        // var tmpOption = new Array("運賃に含む", "運賃に含まない");
+        // var tmpValue = new Array("true", "false");
+        // tmp_conditionObject[conditionId.toLowerCase()] = addCondition(conditionLabel, tmpOption, tmpValue);
         // 乗車券計算のシステム
         var conditionId = "ticketSystemType";
         //  var conditionLabel = "乗車券計算のシステム";
@@ -555,7 +555,7 @@ var expGuiCondition = function (pObject, config) {
         buffer += outConditionRadio("nikukanteiki", "greenSelect");
         buffer += outSeparator("nikukanteiki");
         // 航空保険特別料金
-        buffer += outConditionRadio("includeInsurance", "whiteSelect");
+        // buffer += outConditionRadio("includeInsurance", "whiteSelect");
         // 航空運賃の指定
         //  buffer += outConditionRadio("airFare");
         buffer += '</div>';
@@ -715,7 +715,7 @@ var expGuiCondition = function (pObject, config) {
         buffer += outConditionSelect("ticketSystemType", "greenSelect"); // 乗車券計算のシステム
         buffer += outConditionSelect("preferredTicketOrder", "whiteSelect"); // 優先する乗車券の順序
         buffer += outConditionSelect("nikukanteiki", "greenSelect"); // ２区間定期の利用
-        buffer += outConditionSelect("includeInsurance", "whiteSelect"); // 航空保険特別料金
+        // buffer += outConditionSelect("includeInsurance", "whiteSelect"); // 航空保険特別料金
         //  buffer += outConditionSelect("airFare");// 航空運賃の指定
         buffer += '</div>';
         buffer += '</div>';
